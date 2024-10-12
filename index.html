@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universal Creations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/png" href="/images/logo.png" sizes="32x32" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    
+    
+  </head>
+  <body class="bg-gradient-to-r from-gray-50 to-gray-200">
+    <nav
+      class="w-full h-24 bg-accent-color shadow-lg flex justify-center lg:justify-between px-0 lg:px-20 items-center absolute">
+      <div class="w-full hidden xl:flex justify-center">
+        <img
+          src="images/logo.png"
+          width="150px"
+          class="mt-1 hover:scale-95 transition cursor-pointer"
+        />
+      </div>
+
+      <div class="flex items-center justify-center font-poppins-bold uppercase text-gray-50 gap-10 text-sm sm:text-xl w-full m">
+        <a href="#about" class="cursor-pointer transition hover:text-gray-200">About</a>
+        <a href="#gallery" class="cursor-pointer transition hover:text-gray-200">Gallery</a>
+        <a href="#reviews" class="cursor-pointer transition hover:text-gray-200">Reviews</a>
+        <a href="#clients" class="cursor-pointer transition hover:text-gray-200">Clients</a>
+      </div>
+    </nav>
+    <div
+      class="flex flex-col items-center justify-center min-h-screen py-14"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="flex items-center justify-center h-full gap-32 flex-grow">
+        <div class="flex flex-col gap-y-3">
+          <h1 class="font-poppins-bold text-2xl sm:text-4xl  w-80 sm:w-96 text-center lg:text-left">
+            Welcome to Universal Creations
+          </h1>
+          <p class="w-80 sm:w-96 text-md sm:text-xl text-gray-700 text-center lg:text-left">
+            I am capable of creating many things,
+            feel free to take a look around this
+            website if you are interested!
+          </p>
+          <a
+            href="#about"
+            class="mt-10 bg-accent-color text-gray-100 py-3 rounded shadow-md w-40 sm:w-48 text-center mx-auto lg:mx-0 transition hover:bg-[#3cb88a]"
+          >
+            Learn more...
+          </a>
+        </div>
+        <div class="hidden lg:flex">
+          <img src="images/intro.png" alt="intro" width="500px" />
+        </div>
+      </div>
+
+      <a
+        href="#about"
+        class="text-black animate-pulse cursor-pointer transition hover:scale-105">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="25"
+          height="25"
+          fill="currentColor"
+          class="bi bi-chevron-down"
+          viewBox="0 0 16 16">
+          <path
+            fill-rule="evenodd"
+            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+        </svg>
+      </a>
+    </div>
+
+    <section
+      id="about"
+      class="py-20 bg-gradient-to-l from-gray-200 to-gray-300 flex justify-center gap-96"
+      style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
+    >
+      <img class="hidden lg:flex"
+        src="https://i.ibb.co/YWRWhbv/Commission-Art-crumbsuc-removebg-preview.png"
+        width="350"
+        data-aos="fade-right"
+      />
+      <div
+        class="flex flex-col items-center w-80 sm:w-96 gap-3 text-center"
+        data-aos="fade-left"
+      >
+        <h1 class="font-poppins-bold text-2xl sm:text-4xl">About me</h1>
+        <p class="text-md sm:text-xl text-gray-600">
+          I am Crxmb, hello! I've been building for 5+ years,
+          and professionally building for about 8+ months.
+          I excel mostly in structures and ecology.
+          I have experience in FAWE, FAVS, Arceon, and Axiom.
+          I have access to a server with all the necessary tools.
+          I am also a builder for the Nethergames Network.
+          My payment methods are Zelle, Fiverr, or PayPal (f&f only).
+          The best times to contact me would be 
+          between 5pm EST to 10pm EST for the 
+          fastest response times
+        </p>
+      </div>
+    </section>
+
+    <!-- Used for scrolling to -->
+    <section id="gallery"></section>
+    
+    <section class="mt-24 w-9/12 mx-auto" data-aos="fade-up">
+      <h1 class="font-poppins-bold text-4xl text-left">Portfolio</h1>
+      <p class="text-xl text-gray-500">Rendered images</p>
+      <hr class="mt-3" />
+      <div id="gallery_items" class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 mt-8 w-full justify-between gap-y-16 mx-auto">
+  
+      </div>
+
+      <!-- Add Sub-Portfolio section -->
+      <br>
+      <h2 class="font-poppins-bold text-4xl text-left">Sub-Portfolio</h2>
+      <p class="text-xl text-gray-500">Other images</p>
+      <hr class="mt-3" />
+      <div id="sub_portfolio_items" class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 mt-8 w-full justify-between gap-4 mx-auto">
+        <!-- Add image URLs here -->
+        <img src="https://i.ibb.co/Bw6Xz4x/2024-05-07-19-53-53.png"/>
+        <img src="https://i.ibb.co/t4bVyKh/2024-05-07-19-54-51.png"/>
+        <img src="https://i.ibb.co/d5M4Hv4/2024-05-07-19-55-35.png"/>
+        <img src="https://i.ibb.co/xGFGVGc/2024-06-17-20-40-45.png"/>
+        <img src="https://i.ibb.co/tP3CxR3/2024-07-06-13-18-46.png"/>
+        <img src="https://i.ibb.co/fY7LVcG/2024-07-06-13-43-48.png"/>
+        <!--... (add more images)... -->
+     
+    </section>
+
+    <section id="reviews" class="mt-48 w-full lg:w-9/12 2xl:w-7/12 mx-auto" data-aos="fade-up">
+      <h1 class="font-poppins-bold text-4xl text-center">Reviews</h1>
+      <p class="text-xl text-gray-500 text-center">What some customers are saying...</p>
+      <div class="splide py-10" aria-label="Reviews">
+        <div class="splide__track">
+          <ul class="splide__list h-[210px] md:h-[350px] xl:h-[500px]" id="review_items">
+            
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="clients" class="mt-24 mb-24 bg-gradient-to-l from-gray-500 to-gray-400 py-20" data-aos="fade-up">
+      <h1 class="font-poppins-bold text-4xl text-center text-gray-50">My clients</h1>
+      <div class="flex items-center justify-center mt-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 items-center gap-x-24">
+
+          <div class="flex flex-col items-center">
+            <a href="https://nethergames.org" class="w-48 h-48" target="_blank">
+              <img class="transition hover:scale-105" class="w-auto h-auto" src="https://i.ibb.co/tqk8QpS/nglogo.png" />
+            </a>
+            <div class="flex flex-col items-center text-gray-50">
+              <span class="font-poppins-semibold uppercase text-xl ">Nethergames</span>
+              <span class="bg-blue-500 px-2 rounded-md text-sm mt-1">Network</span>
+              <span class="text-gray-300">Large minigames server</span>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <a href="https://prismar.in" class="w-48 h-48" target="_blank">
+              <img class="transition hover:scale-105" class="w-auto h-auto" src="https://i.ibb.co/HnpQh6L/prismarinlogo-removebg-preview-1-removebg-preview-1.png" />
+            </a>
+            <div class="flex flex-col items-center text-gray-50">
+              <span class="font-poppins-semibold uppercase text-xl ">Prismarin</span>
+              <span class="bg-red-500 px-2 rounded-md text-sm mt-1">Server</span>
+              <span class="text-gray-300">Realistic gun server</span>
+            </div>
+          </div>
+          
+          <div class="flex flex-col items-center">
+            <a href="https://domniusstudios.com" class="w-48 h-48" target="_blank">
+              <img class="transition hover:scale-105" class="w-auto h-auto" src="https://i.ibb.co/6WWRKmk/Domnius-Logo2-2-1.png" />
+            </a>
+            <div class="flex flex-col items-center text-gray-50">
+              <span class="font-poppins-semibold uppercase text-xl ">Domnius Stuidos</span>
+              <span class="bg-purple-500 px-2 rounded-md text-sm mt-1">Studio</span>
+              <span class="text-gray-300">Minecraft game development studio</span>
+            </div>
+          </div>
+
+          
+
+        </div>
+    
+      </div>
+    </section>
+
+    <section id="contact_us" class="mt-24 mb-24" data-aos="fade-up">
+      
+      <div class="w-full sm:w-9/12 xl:w-7/12 h-[580px] mx-auto rounded-sm shadow-lg flex">
+        <div class="bg-accent-color w-full h-full rounded-tl-sm rounded-bl-sm">
+          <h1 class="mt-6 text-center text-3xl font-poppins-bold uppercase text-gray-100">Contact me</h1>
+
+          <form id="contact_form" class="w-full flex items-center flex-col py-5 gap-y-5" onsubmit="submitForm(event)">
+            <div class="flex flex-col w-9/12 sm:w-4/6">
+              <label class="font-poppins-semibold text-gray-100">Name</label>
+              <input id="name" name="name" class="px-3 py-2 rounded-sm shadow w-full text-zinc-900 outline-none" placeholder="...." required/>
+            </div>
+            <div class="flex flex-col w-9/12 sm:w-4/6">
+              <label class="font-poppins-semibold text-gray-100">E-Mail</label>
+              <input id="email" name="email" type="email" class="px-3 py-2 rounded-sm shadow w-full text-zinc-900 outline-none" placeholder="...." required/>
+            </div>
+            <div class="flex flex-col w-9/12 sm:w-4/6">
+              <label class="font-poppins-semibold text-gray-100">Message</label>
+              <textarea id="message" name="message" class="px-3 py-2 rounded-sm shadow w-full text-zinc-900 outline-none h-44" placeholder="...." required></textarea>
+            </div>
+            <p id="form_error" class="text-gray-100"></p>
+            <input type="submit" class="bg-[#0C7C59] rounded shadow text-gray-100 px-7 py-3 transition hover:bg-[#0C7C59]/80 cursor-pointer"></input>
+          </form>
+
+        </div>
+        <div class="w-4/6 h-full bg-zinc-400 rounded-tr-sm rounded-br-sm hidden lg:flex items-center justify-center shadow-md ">
+          <img src="images/logo.png" width="500px"/>
+        </div>
+      </div>
+
+    </section>
+
+    <div id="gallery-fullscreen">
+      <div onclick="disableFullScreen()" id="gallery-fullscreen-content" class="flex items-center justify-center">
+        <img id="gallery-fullscreen-image" src="" class="w-10/12 shadow-xl" alt="Fullscreen Image" />
+      </div>
+    </div>
+
+
+   
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init("lETXDeLHLUblcJORu");
+})();
+
+let submitting = false
+
+function submitForm(event) {
+  event.preventDefault();
+  if(submitting) {
+    return
+  }
+  submitting = true
+
+  const formError = document.getElementById("form_error")
+  emailjs.sendForm('service_0yoss24', 'template_j00z1tz', '#contact_form')
+    .then(function(response) {
+      formError.innerText = "You have successfully submitted the form";
+      document.getElementById("contact_form").reset();
+      submitting = false;
+    }, function(error) {
+      formError.innerText = "There was an error while trying to submit the form";
+      document.getElementById("contact_form").reset();
+      submitting = false;
+    });
+    return false
+}
+
+</script>
+    
+  </body>
+</html>
