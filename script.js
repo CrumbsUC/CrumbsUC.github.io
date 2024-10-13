@@ -30,7 +30,6 @@ async function loadReviews() {
 
 
 async function loadGallery() {
-    console.log("e")
     let galleryItemsParent = document.getElementById("gallery_items")
 
     const galleryHtmlResponse = await fetch("templates/gallery.html")
