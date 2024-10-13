@@ -1,3 +1,58 @@
-<div onclick="viewFullScreen(`{url}`)" class="bg-cover w-72 sm:w-96 h-44 sm:h-60 bg-center rounded shadow mx-auto transition hover:scale-95 cursor-pointer"
- style="background-image: url({url});">
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Image Gallery</title>
+    <style>
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .gallery-item {
+            width: 18rem;
+            height: 11rem;
+            background-size: cover;
+            background-position: center;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+
+<div class="gallery-container" id="gallery"></div>
+
+<script>
+    // Fetch image paths from the gallery.json file
+    fetch('gallery.json')
+        .then(response => response.json())
+        .then(images => {
+            const gallery = document.getElementById('gallery');
+            
+            // Generate gallery items dynamically
+            images.forEach(url => {
+                const div = document.createElement('div');
+                div.classList.add('gallery-item');
+                div.style.backgroundImage = `url(${url})`;
+                div.setAttribute('onclick', `viewFullScreen('${url}')`);
+                gallery.appendChild(div);
+            });
+        })
+        .catch(error => console.error('Error loading gallery.json:', error));
+
+    // Placeholder function for full-screen view logic
+    function viewFullScreen(url) {
+        alert("Full-screen view for: " + url);  // Replace with your full-screen logic
+    }
+</script>
+
+</body>
+</html>
