@@ -30,6 +30,7 @@ async function loadReviews() {
 
 
 async function loadGallery() {
+    console.log("e")
     let galleryItemsParent = document.getElementById("gallery_items")
 
     const galleryHtmlResponse = await fetch("templates/gallery.html")
@@ -38,11 +39,11 @@ async function loadGallery() {
     const galleryJsonResponse = await fetch("config/gallery.json")
     const galleryJsonText = await galleryJsonResponse.text()
 
-    const galleryImages = JSON.parse(reviewJsonText)
+    const galleryImages = JSON.parse(galleryJsonText)
 
     let galleryItems = ""
     galleryImages.forEach(element => {
-        galleryItems += galleryHtmlText.replaceAll("{galleryImage}", element.image).trim();
+        galleryItems += galleryHtmlText.replaceAll("{url}", element.image).trim();
     });
 
     galleryItemsParent.innerHTML = galleryItems;
