@@ -34,33 +34,36 @@ body {
     font-weight: 500;
 }
 
-#gallery-fullscreen {
+#fullscreen-overlay {
+    display: none; /* Start hidden */
     position: fixed;
-    left: 50%;
-    top: 50%;
-    margin: auto auto;
-    display: none;
-    z-index: 999;
-    width: 100vw;
-    height: 100vh;
-    transform: translate(-50%, -50%);  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Darken the background */
+    z-index: 9999; /* Ensure it's above other content */
+    align-items: center;
+    justify-content: center;
 }
 
-#gallery-fullscreen-content {
-    background-color: rgba(1, 1, 1, 0.8);
-    height: 100%;
-    width: 100%;
+#fullscreen-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fullscreen-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
 }
 
 .fade-in {
-    animation: slide-out 350ms ease;
+    animation: fadeIn 0.5s ease;
 }
 
-@keyframes slide-out{
-    0%{
-        opacity: 0%;
-    }
-    100%{
-        transform: 100%;
-    }
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
