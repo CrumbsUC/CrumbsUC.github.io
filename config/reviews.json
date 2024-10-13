@@ -4,34 +4,76 @@
       "stars": 5,
       "user": "pretty_death012",
       "description": "Collaborating with Crumb was an absolute delight; the entire experience was not only incredibly easy but also thoroughly enjoyable. The craftsmanship displayed in the build was truly breathtaking. In a surprisingly short span of time, Crumb skillfully translated my vision into reality. Working together was a pleasure, and the result exceeded my expectations.",
-      "image": "https://i.ibb.co/NZw8KD3/Tear-Light-Lobby.png"
+      "image": "images/TearLightLobby.png"
     },
     {
       "title": "MILITARY SPAWN",
       "stars": 5,
       "user": "feignedmars4438",
       "description": "I had a fantastic experience working with Crumb, He is incredibly creative, easy to collaborate with, and consistently delivers outstanding results. Highly recommended!",
-      "image": "https://i.ibb.co/FWKd3Mx/Military-Base.png"
+      "image": "images/Military_Base.png"
     },
     {
       "title": "PIZZA PARTY",
       "stars": 5,
       "user": "brackybracky",
       "description": "its already done??",
-      "image": "https://i.ibb.co/pLf975x/Pizza.png"
+      "image": "images/Pizza.png"
     },
     {
       "title": "CRYSTAL DEFENDERS",
       "stars": 5,
       "user": "brackybracky",
       "description": "Crumb was really fun to work with, helping me expand my idea further for my video. The build looks phenomenal and perfectly fits what I'm looking for.",
-      "image": "https://i.ibb.co/tpKBfrC/DTC.png"
+      "image": "images/DTC.png"
     },
     {
       "title": "SURVIVAL ISLANDS",
       "stars": 5,
       "user": "brackybracky",
       "description": "The build looks absolutely incredible in just the short span of an hour. Crumb was very friendly to work with and is fun to be around.",
-      "image": "https://i.ibb.co/5sgh2mp/island-Thingy.png"
+      "image": "images/islandThingy.png"
+    },
+    {
+      "title": "Fiverr",
+      "stars": 5,
+      "user": "andrrews",
+      "description": "Great seller, super fast delivery. Professional. Good service provider.",
+      "image": "images/fiverrReviews/andrrews.png"
+    },
+    {
+      "title": "Fiverr",
+      "stars": 5,
+      "user": "arthurko999",
+      "description": "incredible builds, amazing map, not perfect for what I was looking for but this first order was just to see how good he was tbh. ill order from him again in the future and im excited what else he can build. Once again an amazing map! super fast delivery time + really good communication, definitely looking forward to working with this guy more in the future! another amazing map, listened to alot of changes that had to be made and made it like we wanted it to be.",
+      "image": "images/fiverrReviews/arthurko999.png"
+    },
+    {
+      "title": "Fiverr",
+      "stars": 5,
+      "user": "godofwarking",
+      "description": "He's rly sweet amazing and rly kind",
+      "image": "images/fiverrReviews/godofwarking.png"
+    },
+    {
+      "title": "Fiverr",
+      "stars": 5,
+      "user": "maxy2883",
+      "description": "Done everything, exactly how I wanted the project to come out. the delivery time was very good as well. I will most definitely be doing projects with this person again. This is my second purchase From this service, and once again he has delivered a exceptional product. Delivery time was also very good. And will be Using these services again in the future",
+      "image": "images/fiverrReviews/maxy2883.png"
+    },
+    {
+      "title": "Fiverr",
+      "stars": 5,
+      "user": "ozookxparccer",
+      "description": "Loved the product, was super easy to work with, and had a great delivery time.",
+      "image": "images/fiverrReviews/ozookxparccer.png"
+    },
+    {
+      "title": "Fiverr",
+      "stars": 5,
+      "user": "tbp_astro_",
+      "description": "Produced exactly what I needed, will definitely come back!",
+      "image": "images/fiverrReviews/tbp_astro_.png"
     }
   ]
