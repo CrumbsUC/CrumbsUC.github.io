@@ -49,20 +49,27 @@ async function loadGallery() {
 }
 
 function viewFullScreen(url) {
-    let fullScreenElement = document.getElementById("gallery-fullscreen");
-    fullScreenElement.style.display = "block"
+    // Display the full-screen overlay
+    let fullScreenElement = document.getElementById("fullscreen-overlay");
+    fullScreenElement.style.display = "block";
 
-    let fullScreenImage = document.getElementById("gallery-fullscreen-image")
-    fullScreenImage.src = url
+    // Update the full-screen image source
+    let fullScreenImage = document.getElementById("fullscreen-image");
+    fullScreenImage.src = url;
 
-    let content = document.getElementById("gallery-fullscreen-content");
-    content.classList.add("fade-in")
+    // Add fade-in animation
+    let content = document.getElementById("fullscreen-content");
+    content.classList.add("fade-in");
 }
 
 function disableFullScreen() {
-    let fullScreenElement = document.getElementById("gallery-fullscreen");
-    fullScreenElement.style.display = "none"
+    // Hide the full-screen overlay
+    let fullScreenElement = document.getElementById("fullscreen-overlay");
+    fullScreenElement.style.display = "none";
     
+    // Optionally, remove the fade-in class for future use
+    let content = document.getElementById("fullscreen-content");
+    content.classList.remove("fade-in");
 }
 
 loadGallery()
