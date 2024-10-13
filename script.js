@@ -35,7 +35,7 @@ async function loadGallery() {
     const galleryHtmlResponse = await fetch("templates/gallery.html")
     const galleryHtmlText = await galleryHtmlResponse.text()
 
-    const galleryConfigResponse = await fetch("config/gallery.txt")
+    const galleryConfigResponse = await fetch("config/gallery.json")
     const galleryConfigText = await galleryConfigResponse.text()
 
     const urls = galleryConfigText.split("\n")
