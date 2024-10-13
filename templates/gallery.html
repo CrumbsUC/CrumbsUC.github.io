@@ -1,25 +1,33 @@
-<div class="gallery-container" id="gallery"></div>
-
-<script>
-    // Fetch the image paths from gallery.json
-    fetch('config/gallery.json')
-        .then(response => response.json())
-        .then(images => {
-            const gallery = document.getElementById('gallery');
-            
-            // Dynamically create gallery items
-            images.forEach(item => {
-                const div = document.createElement('div');
-                div.classList.add('gallery-item');
-                div.style.backgroundImage = `url(${item.image})`;
-                div.setAttribute('onclick', `viewFullScreen('${item.image}')`);
-                gallery.appendChild(div);
-            });
-        })
-        .catch(error => console.error('Error loading gallery.json:', error));
-
-    // Placeholder for full-screen view function
-    function viewFullScreen(url) {
-        alert('Full-screen view for: ' + url); // Replace with actual full-screen logic
-    }
-</script>
+<div onclick="viewFullScreen(`images/Pantheon.png`)" class="bg-cover w-72 sm:w-96 h-44 sm:h-60 bg-center rounded shadow mx-auto transition hover:scale-95 cursor-pointer"
+ style="background-image: url(images/Pantheon.png);">
+</div>
+<div onclick="viewFullScreen(`images/holysword.png`)" class="bg-cover w-72 sm:w-96 h-44 sm:h-60 bg-center rounded shadow mx-auto transition hover:scale-95 cursor-pointer"
+ style="background-image: url(images/holysword.png);">
+</div>
+<div onclick="viewFullScreen(`images/bonsai-Island.png`)" class="bg-cover w-72 sm:w-96 h-44 sm:h-60 bg-center rounded shadow mx-auto transition hover:scale-95 cursor-pointer"
+ style="background-image: url(images/bonsai-Island.png);">
+</div>
+<div onclick="viewFullScreen(`images/Runic-Building.png`)" class="bg-cover w-72 sm:w-96 h-44 sm:h-60 bg-center rounded shadow mx-auto transition hover:scale-95 cursor-pointer"
+ style="background-image: url(images/Runic-Building.png);">
+</div>
+<div onclick="viewFullScreen(`images/steam2.png`)" class="bg-cover w-72 sm:w-96 h-44 sm:h-60 bg-center rounded shadow mx-auto transition hover:scale-95 cursor-pointer"
+ style="background-image: url(images/steam2.png);">
+</div>
+<div onclick="viewFullScreen(`images/Sword.png`)" class="bg-cover w-72 sm:w-96 h-44 sm:h-60 bg-center rounded shadow mx-auto transition hover:scale-95 cursor-pointer"
+ style="background-image: url(images/Sword.png);">
+</div>
+<div onclick="viewFullScreen(`images/Gingerbread.png`)" class="bg-cover w-72 sm:w-96 h-44 sm:h-60 bg-center rounded shadow mx-auto transition hover:scale-95 cursor-pointer"
+ style="background-image: url(images/Gingerbread.png);">
+</div>
+<div onclick="viewFullScreen(`images/Pizza.png`)" class="bg-cover w-72 sm:w-96 h-44 sm:h-60 bg-center rounded shadow mx-auto transition hover:scale-95 cursor-pointer"
+ style="background-image: url(images/Pizza.png);">
+</div>
+<div onclick="viewFullScreen(`images/DTC.png`)" class="bg-cover w-72 sm:w-96 h-44 sm:h-60 bg-center rounded shadow mx-auto transition hover:scale-95 cursor-pointer"
+ style="background-image: url(images/DTC.png);">
+</div>
+<div onclick="viewFullScreen(`images/Military_Base.png`)" class="bg-cover w-72 sm:w-96 h-44 sm:h-60 bg-center rounded shadow mx-auto transition hover:scale-95 cursor-pointer"
+ style="background-image: url(images/Military_Base.png);">
+</div>
+<div onclick="viewFullScreen(`images/TearLightLobby.png`)" class="bg-cover w-72 sm:w-96 h-44 sm:h-60 bg-center rounded shadow mx-auto transition hover:scale-95 cursor-pointer"
+ style="background-image: url(images/TearLightLobby.png);">
+</div>
