@@ -35,16 +35,14 @@ async function loadGallery() {
     const galleryHtmlResponse = await fetch("templates/gallery.html")
     const galleryHtmlText = await galleryHtmlResponse.text()
 
-    const galleryConfigResponse = await fetch("config/gallery.json")
-    const galleryConfigText = await galleryConfigResponse.text()
+    const galleryJsonResponse = await fetch("config/gallery.json")
+    const galleryJsonText = await galleryJsonResponse.text()
 
-    const urls = galleryConfigText.split("\n")
+    const galleryImages = JSON.parse(reviewJsonText)
 
     let galleryItems = ""
-    urls.forEach(element => {
-        if(element.startsWith("https://") || element.startsWith("http://")) {
-            galleryItems += galleryHtmlText.replaceAll("{url}", element).trim()
-        }
+    galleryImages.forEach(element => {
+        galleryItems += galleryHtmlText.replaceAll("{galleryImage}", element.image).trim();
     });
 
     galleryItemsParent.innerHTML = galleryItems;
