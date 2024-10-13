@@ -219,11 +219,12 @@
 
     </section>
 
-    <div id="fullscreen-overlay">
-      <div onclick="disableFullScreen()" id="fullscreen-content" class="flex items-center justify-center">
-        <img id="fullscreen-image" src="" class="w-10/12 shadow-xl" alt="Fullscreen Image" />
+    <div id="fullscreen-overlay" style="display: none;">
+      <div id="fullscreen-content" class="flex items-center justify-center" onclick="disableFullScreen()">
+          <img id="fullscreen-image" class="shadow-xl" alt="Fullscreen Image" />
       </div>
     </div>
+
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
