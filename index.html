@@ -219,10 +219,9 @@
 
     </section>
 
-    <div id="fullscreen-overlay" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75" style="display: none;">
-      <div id="fullscreen-content" class="relative">
-          <img id="fullscreen-image" src="" alt="Full Screen" class="max-w-full max-h-full">
-          <button onclick="disableFullScreen()" class="absolute top-2 right-2 text-white text-xl">✖</button>
+    <div id="gallery-fullscreen">
+      <div onclick="disableFullScreen()" id="gallery-fullscreen-content" class="flex items-center justify-center">
+        <img id="gallery-fullscreen-image" src="" class="w-10/12 shadow-xl" alt="Fullscreen Image" />
       </div>
     </div>
 
