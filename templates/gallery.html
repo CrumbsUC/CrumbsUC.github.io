@@ -32,7 +32,7 @@
 
 <script>
     // Fetch image paths from the gallery.json file
-    fetch('gallery.json')
+    fetch('config/gallery.json')
         .then(response => response.json())
         .then(images => {
             const gallery = document.getElementById('gallery');
