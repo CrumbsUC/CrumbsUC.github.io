@@ -1,13 +1,13 @@
 [
-    "images/Pantheon.png",
-    "images/holysword.png",
-    "images/bonsai-Island.png",
-    "images/Runic-Building.png",
-    "images/steam2.png",
-    "images/Sword.png",
-    "images/Gingerbread.png",
-    "images/Pizza.png",
-    "images/DTC.png",
-    "images/Military_Base.png",
-    "images/TearLightLobby.png"
+    { "image": "images/Pantheon.png" },
+    { "image": "images/holysword.png" },
+    { "image": "images/bonsai-Island.png" },
+    { "image": "images/Runic-Building.png" },
+    { "image": "images/steam2.png" },
+    { "image": "images/Sword.png" },
+    { "image": "images/Gingerbread.png" },
+    { "image": "images/Pizza.png" },
+    { "image": "images/DTC.png" },
+    { "image": "images/Military_Base.png" },
+    { "image": "images/TearLightLobby.png" }
 ]
