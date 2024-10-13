@@ -51,7 +51,7 @@ async function loadGallery() {
 function viewFullScreen(url) {
     // Display the full-screen overlay
     let fullScreenElement = document.getElementById("fullscreen-overlay");
-    fullScreenElement.style.display = "block";
+    fullScreenElement.style.display = "flex"; // Show as flex to center the content
 
     // Update the full-screen image source
     let fullScreenImage = document.getElementById("fullscreen-image");
